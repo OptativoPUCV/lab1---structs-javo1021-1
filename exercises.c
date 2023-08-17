@@ -117,9 +117,9 @@ for(int i = 0 ; i < size; i++)
     contDes++;
   } 
 }
-if(contAs == size-1){
+if(contAs >= size-1){
   return 1;
-} else if (contDes == size-1){
+} else if (contDes >= size-1){
   return -1;
   }
   else if (contAs != size-1 && contDes != size-1){
