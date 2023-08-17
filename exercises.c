@@ -117,15 +117,15 @@ for(int i = 0 ; i < size; i++)
     contDes++;
   } 
 }
-if(contAs == size){
+if(contAs == size-1){
   return 1;
-} else if (contDes == size){
+} else if (contDes == size-1){
   return -1;
   }
-  else if (contAs != size && contDes != size){
+  else if (contAs != size-1 && contDes != size-1){
     return 0;
   }
-  
+
 }
 /*
 Ejercicio 6: Información de una Biblioteca
