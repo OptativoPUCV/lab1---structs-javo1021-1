@@ -106,3 +106,9 @@ ju., 17 de ago. de 2023 16:39:25:
  tests:  0|3
 total_score: 40/70
 ccff525
+ju., 17 de ago. de 2023 16:46:20: 
+ exercises.c | 12 +++++++-----
+ 1 file changed, 7 insertions(+), 5 deletions(-)
+ tests:  0|3
+total_score: 40/70
+e11cdca
