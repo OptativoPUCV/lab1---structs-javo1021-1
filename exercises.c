@@ -107,19 +107,20 @@ int checkSorted(int arr[], int size) {
 
   int contAs = 0 ;
   int contDes = 0;
+  int total = size-1;
   for(size_t i = 0 ; i < size ; i++){
-    int aux = arr[0];
+    int aux = arr[i];
     if(aux < arr[i+1]){
       contAs++;
       }else if ( aux > arr[i + 1]){
         contDes++;
       }
   }
-  if(contAs == size-1){
+  if(contAs == total){
     return 1;
   }else if(contDes == size-1){
     return -1;
-  }else if {
+  }else{
     return 0;
   }
 }
