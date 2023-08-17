@@ -60,3 +60,16 @@ ju., 17 de ago. de 2023 16:26:25:
  tests:  0|3
 total_score: 40/70
 59bd41b
+ju., 17 de ago. de 2023 16:28:42: 
+ exercises.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function 'checkSorted':
+exercises.c:127:14: error: expected ';' before '}' token
+     return -1
+              ^
+              ;
+   }else return 0;
+   ~           
+Compilation failed
+90b26ba
