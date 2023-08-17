@@ -35,3 +35,16 @@ exercises.c:90:10: error: expected ';' before '}' token
        ~   
 Compilation failed
 037f986
+ju., 17 de ago. de 2023 14:53:52: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function 'mergeSortedArrays':
+exercises.c:90:10: error: expected ';' before '}' token
+       i++
+          ^
+          ;
+       }
+       ~   
+Compilation failed
+7a4c00d
