@@ -105,32 +105,23 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size) {
 
-  int cont = 0 ;
+  int contAs = 0 ;
+  int contDes = 0;
   for(size_t i = 0 ; i < size ; i++){
     int aux = arr[0];
     if(aux < arr[i+1]){
-      cont++;
+      contAs++;
+      }else if ( aux > arr[i + 1]){
+        contDes++;
       }
   }
-
-  if (cont == size-1){
+  if(contAs == size-1){
     return 1;
-    }
-  cont = 0 ;
-
-  for(size_t i = 0 ; i < size ; i++){
-    int aux = arr[0];
-    if(aux > arr[i+1]){
-      cont++;
-      }
   }
-
-  if (cont == size-1){
+  if(contDes == size-1){
     return -1;
   }else return 0;
-
 }
-
 /*
 Ejercicio 6: Información de una Biblioteca
 Descripción: Vamos a representar la información de una biblioteca. En la
