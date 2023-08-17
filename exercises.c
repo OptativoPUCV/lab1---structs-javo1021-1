@@ -105,25 +105,27 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size) {
 
-  int contAs = 0 ;
-  int contDes = 0;
-  int total = size-1;
-  for(size_t i = 0 ; i < size ; i++){
-    int aux = arr[i];
-    if(aux <= arr[i]){
-      contAs++;
-    } else if(aux >= arr[i]){
-      contDes++;
-    }
+int contAs = 0; 
+int contDes = 0;
+
+for(int i = 0 ; i < size; i++)
+{
+  int aux = arr[i];
+  if(aux <= arr[i+1]){
+    contAs++;
+  } else if ( aux >= arr[i+1]){
+    contDes++;
+  } 
+}
+if(contAs == size){
+  return 1;
+} else if (contDes == size){
+  return -1;
+  else if (contAs != size && contDes != size){
+    return 0;
   }
-  if (contAs == total){
-    return 1;
-  } else if(contDes == total){
-    return -1;
-    } else if(contDes != total && contAs != total) {
-      return 0;
-    }
-    return -2;
+}
+
 }
 /*
 Ejercicio 6: Información de una Biblioteca
