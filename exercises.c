@@ -108,23 +108,25 @@ int checkSorted(int arr[], int size) {
   int cont = 0 ;
   for(size_t i = 0 ; i < size ; i++){
     int aux = arr[0];
-    if(aux < arr[i+1])
+    if(aux < arr[i+1]){
       cont++;
+      }
   }
 
-  if (cont == size-1)
+  if (cont == size-1){
     return 1;
-  
+    }
   cont = 0 ;
 
   for(size_t i = 0 ; i < size ; i++){
     int aux = arr[0];
-    if(aux > arr[i+1])
+    if(aux > arr[i+1]){
       cont++;
+      }
   }
 
   if (cont == size-1){
-    return -1
+    return -1;
   }else return 0;
 
 }
