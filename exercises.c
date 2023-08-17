@@ -121,11 +121,11 @@ if(contAs == size){
   return 1;
 } else if (contDes == size){
   return -1;
+  }
   else if (contAs != size && contDes != size){
     return 0;
   }
-}
-
+  
 }
 /*
 Ejercicio 6: Información de una Biblioteca
