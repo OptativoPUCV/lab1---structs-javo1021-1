@@ -112,19 +112,17 @@ int checkSorted(int arr[], int size) {
     int aux = arr[i];
     if(aux <= arr[i]){
       contAs++;
-    }
-    if(aux >= arr[i]){
+    } else if(aux >= arr[i]){
       contDes++;
     }
   }
-  if (contAs == total)
+  if (contAs == total){
     return 1;
-
-  if(contDes == total)
+  } else if(contDes == total){
     return -1;
-  else {
-    return 0;
-  }
+    } else if(contDes != total && contAs != total) {
+      return 0;
+    }
 }
 /*
 Ejercicio 6: Información de una Biblioteca
