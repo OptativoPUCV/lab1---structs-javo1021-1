@@ -117,10 +117,11 @@ int checkSorted(int arr[], int size) {
   }
   if(contAs == size-1){
     return 1;
-  }
-  if(contDes == size-1){
+  }else if(contDes == size-1){
     return -1;
-  }else return 0;
+  }else if {
+    return 0;
+  }
 }
 /*
 Ejercicio 6: Información de una Biblioteca
