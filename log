@@ -17,3 +17,21 @@ ju., 17 de ago. de 2023 14:36:30:
  tests:  0|4
 total_score: 30/70
 5fc6f0c
+ju., 17 de ago. de 2023 14:52:23: 
+ exercises.c | 17 +++++++++++++++--
+ 1 file changed, 15 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function 'mergeSortedArrays':
+exercises.c:88:36: error: 'arr' undeclared (first use in this function); did you mean 'arr2'?
+     if(i < size1 && (j >= size2 || arr[i] <= arr2[j])){
+                                    ^~~
+                                    arr2
+exercises.c:88:36: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:90:10: error: expected ';' before '}' token
+       i++
+          ^
+          ;
+       }
+       ~   
+Compilation failed
+037f986
