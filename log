@@ -5,3 +5,9 @@ mi., 16 de ago. de 2023 22:54:36:
  tests:  0|6
 total_score: 10/70
 dea6c12
+ju., 17 de ago. de 2023 14:20:20: 
+ exercises.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+ tests:  0|5
+total_score: 20/70
+8c6c5a6
