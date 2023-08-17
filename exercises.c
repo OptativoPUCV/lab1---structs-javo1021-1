@@ -123,6 +123,7 @@ int checkSorted(int arr[], int size) {
     } else if(contDes != total && contAs != total) {
       return 0;
     }
+    return -2;
 }
 /*
 Ejercicio 6: Información de una Biblioteca
