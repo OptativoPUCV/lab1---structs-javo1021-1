@@ -206,3 +206,17 @@ ju., 17 de ago. de 2023 23:06:19:
  tests:  0|2
 total_score: 50/70
 52d8451
+vi., 18 de ago. de 2023  0:11:32: 
+ exercises.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function 'inicializarLibro':
+exercises.c:154:10: error: 'return' with a value, in function returning void [-Werror]
+   return 0;
+          ^
+exercises.c:149:6: note: declared here
+ void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,int anioNacimiento, int anioPublicacion) {
+      ^~~~~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+283666a
