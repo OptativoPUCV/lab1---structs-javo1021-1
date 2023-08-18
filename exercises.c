@@ -105,23 +105,24 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size) {
 
-  int contAs = 0; 
-  int contDes = 0;
+  int esAs = 1; 
+  int esDes = 1;
 
   for(int i = 1; i < size; i++){
 
-    if( arr[i-1] < arr[i]){
-      contAs++;
-    } else if (arr[i-1] > arr[i]){
-      contDes++;
+    if(arr[i-1] > arr[i]){
+      esAs = 0;
+    }
+    if (arr[i-1] < arr[i]){
+      esDes = 0;
     }
   }
 
-  if(contAs == size-1){
+  if (esAs) {
     return 1;
-  } else if (contDes == size-1){
+  } else if (esDes) {
     return -1;
-  } else { 
+  } else {
     return 0;
   }
 
