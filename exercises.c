@@ -107,22 +107,23 @@ int checkSorted(int arr[], int size) {
 
   int contAs = 0; 
   int contDes = 0;
-  int aux = arr[0];
 
-  for(int i = 1; i< size; i++){
+  for(int i = 1; i < size; i++){
 
-    if(aux < arr[i]){
+    if( arr[i-1] < arr[i]){
       contAs++;
-    } else if (aux > arr[i]){
+    } else if (arr[i-1] > arr[i]){
       contDes++;
     }
-    aux = arr[i]
   }
-  if(contAs == size){
+
+  if(contAs == size-1){
     return 1;
-  } else if (contDes == size){
+  } else if (contDes == size-1){
     return -1;
-  } else return 0;
+  } else { 
+    return 0;
+  }
 
 }
 /*
