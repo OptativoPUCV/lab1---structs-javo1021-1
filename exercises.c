@@ -150,8 +150,8 @@ void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
 
   strcpy(libro->autor.nombre, nombreAutor);
   strcpy(libro->titulo, titulo);
-
-  return 0;
+  libro->autor.anioNacimiento = anioNacimiento;
+  libro->anioPublicacion = anioPublicacion;
 }
 
 /*

@@ -220,3 +220,9 @@ exercises.c:149:6: note: declared here
 cc1.exe: all warnings being treated as errors
 Compilation failed
 283666a
+vi., 18 de ago. de 2023  0:13:46: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|1
+total_score: 60/70
+050efbc
