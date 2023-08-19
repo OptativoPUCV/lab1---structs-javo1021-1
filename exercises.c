@@ -180,7 +180,7 @@ Nodo *crearListaEnlazada(int arr[], int size) {
 
   Nodo *noActual = primerNo;
 
-  for(size_t i = 0 ; i < size; i++){
+  for(size_t i = 1 ; i < size; i++){
 
     Nodo *nuevoNo = (Nodo *)malloc(sizeof(Nodo));
     if(nuevoNo == NULL){
