@@ -105,22 +105,20 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size) {
 
-  int esAs = 1; 
-  int esDes = 1;
+  int esAs = 0;
+  int esDes = 0;
 
-  for(int i = 1; i < size; i++){
-
-    if(arr[i-1] > arr[i]){
-      esAs = 0;
+  for(size_t i = 1 ; i <  size; i++) {
+    if(arr[i] >= arr[i-1]) {
+      esAs++;
     }
-    if (arr[i-1] < arr[i]){
-      esDes = 0;
+    if(arr[i] <= arr[i-1]){
+      esDes++;
     }
   }
-
-  if (esAs) {
+  if(esAs == size - 1){
     return 1;
-  } else if (esDes) {
+  } else if (esDes == size - 1){
     return -1;
   } else {
     return 0;
@@ -149,7 +147,7 @@ typedef struct {
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,int anioNacimiento, int anioPublicacion) {
 
   strcpy(libro->autor.nombre, nombreAutor);
-  strcpy(libro->titulo, titulo);
+  strcpy(libro->titulo, titulo ) ;
   libro->autor.anioNacimiento = anioNacimiento;
   libro->anioPublicacion = anioPublicacion;
 }
@@ -170,4 +168,7 @@ typedef struct nodo {
   struct nodo *siguiente; // puntero al siguiente nodo
 } Nodo;
 
-Nodo *crearListaEnlazada(int arr[], int size) { return NULL; }
+Nodo *crearListaEnlazada(int arr[], int size) {
+  
+
+ return NULL; }
